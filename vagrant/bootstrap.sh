@@ -45,7 +45,7 @@ fi
 VHOST=$(cat <<EOF
 <VirtualHost *:80>
   DocumentRoot "/var/www"
-  ServerName simple-magento-vagrant.dev
+  ServerName magento.dev
 
   <Directory "/var/www">
     AllowOverride All
@@ -91,7 +91,7 @@ if [ ! -d "/vagrant/httpdocs/adminer" ]; then
   mkdir /vagrant/httpdocs/adminer
   wget -O /vagrant/httpdocs/adminer/index.php https://www.adminer.org/static/download/4.2.5/adminer-4.2.5.php
 
-  echo "Adminer installed... Use http://simple-magento-vagrant.dev/adminer/ URL to use it."
+  echo "Adminer installed... Use http://magento.dev/adminer/ URL to use it."
 fi
 
 
@@ -144,8 +144,8 @@ mysql -u root magento < /vagrant/httpdocs/magento_sample_data_for_1.9.1.0.sql
 echo "done."
 
 echo "Update DB config with local domain name..."
-mysql -u root -e "UPDATE magento.core_config_data SET value = 'http://simple-magento-vagrant.dev/' WHERE core_config_data.path = 'web/unsecure/base_url'"
-mysql -u root -e "UPDATE magento.core_config_data SET value = 'http://simple-magento-vagrant.dev/' WHERE core_config_data.path = 'web/secure/base_url'"
+mysql -u root -e "UPDATE magento.core_config_data SET value = 'http://magento.dev/' WHERE core_config_data.path = 'web/unsecure/base_url'"
+mysql -u root -e "UPDATE magento.core_config_data SET value = 'http://magento.dev/' WHERE core_config_data.path = 'web/secure/base_url'"
 echo "done."a
 
 

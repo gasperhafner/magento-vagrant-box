@@ -6,7 +6,6 @@ Simple-Magento-Vagrant -- ultra light Vagrant development environment for runnin
 I create this repo for my self as easyest way install Magento and share with you.
 
 After installation you will get clean Magento 1.9.2.3 with sample data 1.9.1.0.
-You can re-configure for personal use in you development. See __[How to use and/or customize](https://github.com/klierik/simple-magento-vagrant/blob/master/README.md#how-to-use-andor-customize)__ section for more information.
 
 # What do you get? #
 + Ubuntu 14.04 + Apache2 + Php5 + MySQL 5.5.x
@@ -58,7 +57,7 @@ DB user name: **magento**
 DB user password: **password**
 
 ## Web server configuration ##
-Server name: **simple-magento-vagrant.dev**
+Server name: **magento.dev**
 
 ## How to use and/or customize. ##
 It will be work out of box but you can edit configuration if you need.
@@ -66,10 +65,10 @@ It will be work out of box but you can edit configuration if you need.
 ### Change domain name
 
 1. Open Vagrantfile and use find/replace tool to change
-`"simple-magento-vagrant"` ==> `"my-personal-magento-site-name"` or what you need
+`"magento"` ==> `"my-personal-magento-site-name"` or what you need
 
 2. Open bootstrap.sh and use find/replace tool to change
-`"simple-magento-vagrant"` ==> `"my-personal-magento-site-name"` or what you need
+`"magento"` ==> `"my-personal-magento-site-name"` or what you need
 
 ### Change network private ip
 Open Vagrant file and find `node.vm.network :private_network, ip: '192.168.99.99'` ==> change ip
@@ -90,12 +89,12 @@ That's why i sync my folders in this way `config.vm.synced_folder "../magento/",
 Change `../magento/` path to folder with your project (it can be relative or absolute url).
 
 ## How to run? ##
-Download [latest Simple-Magento-Vagrant](https://github.com/klierik/simple-magento-vagrant/archive/master.zip) zip archive (and unpack it) or run '$ git clone git@github.com:klierik/simple-magento-vagrant.git' in your test folder.
-Then go to vagrant folder. For example '$ cd /Volumes/Data/http/htdocs/simple-magento-vagrant/vagrant/'
+Download [latest magento-vagrant-box](https://github.com/gasperhafner/magento-vagrant-box/archive/master.zip) zip archive (and unpack it) or run '$ git clone git@github.com:gasperhafner/magento-vagrant-box.git' in your test folder.
+Then go to vagrant folder. For example '$ cd /Volumes/Data/http/htdocs/magento-vagrant/vagrant/'
 Run `$ vagrant up` in your vagrant options.
 
 **PS: via installation you can be asked for password**
 
-After installation is finished open http://simple-magento-vagrant.dev/ in your browser and install Magento.
+After installation is finished open http://magento.dev/ in your browser and install Magento.
 
 Good luck ;)
