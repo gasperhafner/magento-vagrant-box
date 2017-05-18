@@ -30,15 +30,6 @@ $ tree -L 2
 
 ## Default configuration ##
 
-**File system:**
-```
-nfs: true
-mount_options: ["nolock", "async"]
-bsd__nfs_options: ["alldirs","async","nolock"]
-config.nfs.map_uid = 0
-config.nfs.map_gid = 0
-```
-
 **VirtualBox settings:**
 
 Memory adn CPU cores by default: 1 core, 2048MB
