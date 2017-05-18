@@ -80,21 +80,6 @@ echo "INSTALLING and CONFIGURE NTP"
 echo "=================================================="
 apt-get -y install ntp
 
-
-
-echo "=================================================="
-echo "INSTALLING ADMINER"
-echo "=================================================="
-if [ ! -d "/vagrant/httpdocs/adminer" ]; then
-  echo "Adminer not found at /vagrant/httpdocs/adminer and will be installed..."
-
-  mkdir /vagrant/httpdocs/adminer
-  wget -O /vagrant/httpdocs/adminer/index.php https://www.adminer.org/static/download/4.2.5/adminer-4.2.5.php
-
-  echo "Adminer installed... Use http://magento.dev/adminer/ URL to use it."
-fi
-
-
 echo "=================================================="
 echo "INSTALLING MYSQL"
 echo "=================================================="

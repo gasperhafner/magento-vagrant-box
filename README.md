@@ -42,7 +42,7 @@ config.nfs.map_gid = 0
 
 **VirtualBox settings:**
 
-Memory adn CPU cores by default: 1/8 of all memory and all cores (for Windows user 2 cores and 1024 memory)
+Memory adn CPU cores by default: 1 core, 2048MB
 Network host-guest configuration:
 ```
 config.vm.network :forwarded_port, guest: 80, host: 8999
