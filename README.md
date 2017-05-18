@@ -10,7 +10,6 @@ After installation you will get clean Magento 1.9.2.3 with sample data 1.9.1.0.
 # What do you get? #
 + Ubuntu 14.04 + Apache2 + Php5 + MySQL 5.5.x
 + Magento 1.9.2.3 with sample data 1.9.1.0
-+ [Adminer 3.7.1](http://www.adminer.org/)(formerly phpMinAdmin)
 
 __Folders structure:__
 ```
