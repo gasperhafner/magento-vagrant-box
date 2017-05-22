@@ -1,3 +1,7 @@
+### [Presentation](https://docs.google.com/presentation/d/1LVL8atZW6JOQhjkdxsJ5whc6JVNZOpKKiOD_0_PRdDw/edit?usp=sharing)
+
+https://docs.google.com/presentation/d/1LVL8atZW6JOQhjkdxsJ5whc6JVNZOpKKiOD_0_PRdDw/edit?usp=sharing
+
 ### Looking for Magento2 Vagrant environment?
 If you interesting about Magento2 Vagrant environment you can find it [here](https://github.com/klierik/magento2-vagrant) 
 
